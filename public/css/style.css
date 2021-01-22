@@ -1,0 +1,249 @@
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+.jumbotron .f-main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+.jumbotron .f-little-title{
+  font-family: 'Lato', sans-serif;
+  font-size:2rem;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+
+.f-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  padding-top: 5rem;
+}
+
+.f-text{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.f-footer-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-top: 5rem;
+}
+
+
+/* COMMON */
+
+.v-align{
+
+  vertical-align: middle;
+}
+
+.align-middle{
+ line-height: 30px;
+
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+.bold{
+  font-weight: 700;
+}
+.lh-70{
+  line-height: 70px;
+}
+
+.lh-30{
+  line-height: 30px;
+}
+
+.w-200{
+  width:200px;
+}
+
+.h-2 {
+  height: 2px;
+}
+
+.h-30{
+  min-height: 30px;
+}
+
+.h-40{
+  min-height: 40px;
+}
+
+.h-70{
+  min-height: 70px;
+}
+
+.h-200{
+  min-height: 200px;
+}
+
+.h-300{
+  min-height: 300px;
+}
+
+.h-400{
+  min-height: 400px;
+}
+
+.h-600{
+  min-height: 600px;
+}
+
+/* //////////////////////// */
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-black{
+  background-color: black;
+}
+.bg-dark{
+  background-color: rgb(44, 62, 80);
+}
+
+.bg-light{
+  background-color: rgb(26, 188, 156);
+}
+.bg-less-dark{
+  background-color: rgb(58, 84, 109);
+}
+.c-light{
+  color: rgb(26, 188, 156);
+}
+.c-white{
+  color:white;
+}
+
+.c-dark{
+  color:rgb(44, 62, 80);
+}
+
+.fs-logo{
+  font-size: 2rem;
+}
+
+.td-none{
+  text-decoration: none;
+}
+
+
+
+nav ul li a:hover{
+  color: rgb(26, 188, 156);
+  text-decoration: none;
+}
+
+.img-resize{
+  width: 25%;
+  height: auto;
+}
+
+
+span {
+  display: flex;
+  flex-direction: row;
+
+}
+.line-white:before, .line-white:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #fff;
+  margin: auto;
+}
+
+.line-dark:before, .line-dark:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid rgb(44, 62, 80);
+  margin: auto;
+}
+
+.portfolio-item{
+  margin-bottom: 30px;
+}
+
+.about{
+  padding-bottom: 5rem;
+}
+
+/* HOVER SU BUTTON */
+
+.buttonDownload{
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgb(26, 188, 156);
+  color: white;
+  display: inline-block;
+  width:25rem;
+  height: 6rem;
+  text-align: center;
+}
+
+.buttonDownload:hover{
+  background-color: white;
+  color:rgb(44, 62, 80);
+}
+
+
+/* HOVER SU IMMAGINI */
+.overlay img{
+  width:100%;
+  opacity: 1;
+}
+
+.overlay:hover img{
+  opacity: 0.3;
+}
+
+.overlay:hover {
+  background-color: rgb(26, 188, 156);
+  border-radius: 5px;
+}
+
+.overlay:hover::before{
+  content: "\002B";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100px;
+  z-index:3;
+}
+
+.round-box{
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border:1px solid white;
+  color: white;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+  body {
+    font-size: 10px;
+  }
+
+  h3,h5 {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}

@@ -15,7 +15,7 @@
               <div class="hidden-xs col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-4 h-70">
                 <ul class="bolder list-inline list-unstyled text-uppercase">
                   <li><a class="c-white" href="#">portfolio</a></li>
-                  <li><a class="c-white" href="#">about</a></li>
+                  <li><a class="c-white" href="/about">about</a></li>
                   <li><a class="c-white" href="#">contact</a></li>
                 </ul>
               </div>
