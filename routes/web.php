@@ -25,6 +25,4 @@ Route::get('/about', function(){
     return view('about');
 });
 
-/* Route::get('/child', function () {
-    return view('child');
-}); */
+Route::get('/dischi','DischiController@index');
