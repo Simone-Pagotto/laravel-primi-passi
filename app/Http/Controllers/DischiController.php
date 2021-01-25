@@ -8,13 +8,7 @@ class DischiController extends Controller
 {
     public function index() {
 
-        /* $data  = file_get_contents(__DIR__ . '/../../../storage/app/mock/dischi.json');
-
-        var_dump($data);
- */
-        //ora posso accedere ai dati e posso crearmi la view con le direttive laravel
-
-        $data = array (
+        $datas = array (
                     'success' => true,
                     'response' => 
                         array (
@@ -99,9 +93,10 @@ class DischiController extends Controller
                             'year' => '1987',
                             ),
                         ),
-                        ) 
-
-
-        return view('dischi', compact('data'));
+                    );
+        $genres = ['Rock', 'Pop', 'Metal', 'Jazz'];           
+        
+        
+        return view('dischi', ['data' => $datas['response']]);
     }
 }

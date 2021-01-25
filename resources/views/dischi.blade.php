@@ -17,20 +17,27 @@
 
         <div id="root" class="cds-container container">
 
-            {{-- Template disco --}}
+            {{-- Select tramite genere --}}
+            <select name="" id="">
+                <option disabled value="">Please select one</option>
+                <option></option>
+               {{--  @foreach ($genres as $genre)
+                    <option value="genre">{{$genre}}</option>
+                @endforeach --}}
+            </select>
 
+            {{-- Template disco --}}
+            
             @foreach($data as $cd)
 
-                <p>{{$cd}}</p>
-
-                {{-- <div class="cd">
-                    <img src="{{ $cd['poster'] }}" alt="foto copertina">
-                </div> --}}
-
-
-
-
-            @endforeach
+                <div class="cd">
+                    <img src="{{$cd['poster']}}" alt="">
+                    <h3>{{$cd['title']}}</h3>
+                    <span class="author">{{$cd['author']}}</span>
+                    <span class="year">{{$cd['year']}}</span>
+                </div>
+                    
+            @endforeach 
 
 
 {{--             <!-- Select tramite genere -->
